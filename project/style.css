@@ -1,0 +1,363 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inconsolata", Arial, sans-serif;
+}
+
+html{
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 5rem;
+}
+
+.header{
+   height: 100vh;
+   width: auto;
+}
+.col-1{
+	display: grid;
+   grid-template-columns: 55% auto;
+}
+.title a{
+	display: inline-block;
+	text-decoration: none;
+	color:  black;
+	font-size: 28px;
+	margin: 34px 45px;
+	font-weight: bolder;
+}
+.menu-bar{
+	margin-top: 24px;
+}
+
+.menu-bar ul{
+	list-style-type: none;
+}
+.menu-bar ul li{
+	float: left;
+}
+.menu-bar li a{
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	letter-spacing: 1px;
+	padding: 20px;
+}
+.menu-bar button{
+	 height: 50px;
+	 width: 70px;
+	 outline: none;
+	 background: #e11584;
+	 color: white;
+	 border: 1px solid #e11584;
+	 border-radius: 20px;
+	 font-weight: bolder;
+	 
+}
+.menu-bar button a{
+	color: white;
+	text-decoration: none;
+	font-weight: bolder;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	
+}
+.slogan{
+	  text-align: center;
+	  margin: 110px;
+}
+.slogan h1{
+       padding: 18px;
+       letter-spacing: 8px;
+       font-size: 44px;
+       font-family: cursive;
+}
+.slogan h5{
+	margin: 14px;
+	 padding: 18px;
+       letter-spacing: 2px;
+       font-size: 24px;
+       font-weight: normal;
+}
+.btn{
+	 position: relative;
+	 top: 10%;
+	 left: 0%;
+	 }
+ .btn1{
+	 height: 50px;
+	 width: 120px;
+	 outline: none;
+	 background: #e11584;
+	 color: black;
+	 border: 1px solid #e11584;
+	 border-radius: 20px;
+	 font-weight: bolder;
+}
+ .btn2{
+	 height: 50px;
+	 width: 120px;
+	 outline: none;
+	 background: #ffff44;
+	 color: black;
+	 border: 1px solid #ffff44;
+	 border-radius: 20px;
+	 font-weight: bolder;
+}
+.btn2:hover{
+	 background: white;
+	 cursor: pointer;
+}
+.btn1:hover{
+	background: white;
+	cursor: pointer;
+}
+.btnlogin:hover{
+	  background: white;
+	  cursor: pointer;
+}
+.btnlogin a:hover{
+	  text-decoration: none;
+     color: black;
+}
+.menu-bar a:hover{
+	  text-decoration: underline;
+}
+
+section{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 20px;
+	background: #ffff44;
+	height: 100vh;
+}
+section .contain{
+	  margin: 50px;
+}
+section .contain h3{
+	display: inline-block;
+	  letter-spacing: 2px;
+	  padding: 5px;
+}
+section .contain p{
+	letter-spacing: 2px;
+	  padding: 8px;
+}
+section .contain a{
+	   text-decoration: none;
+	   color:  black;
+}
+
+section	.contain	i{
+	  font-size: 38px;
+	  position: relative;
+	  top: 12px;
+}
+
+.blog{
+	  height: 200vh;
+	  width: auto;
+}
+.post{
+	margin: 174px;
+}
+.post h2{
+	  text-align: center;
+	 font-family: cursive;
+	  letter-spacing: 2px;
+	  font-size: 34px;
+	  padding: 44px;
+}
+.post p{
+	   text-align: center;
+	   font-family: serif;
+	   letter-spacing: 3px;
+	   font-size: 17px;
+}
+
+.views{
+	   font-family: monospace;
+	   display: grid;
+	   grid-template-columns: auto auto auto;
+	   gap:20px;
+}
+.card{
+   display: grid;
+   grid-template-columns: 350px;
+   grid-template-rows: 300px 240px 80px;
+   grid-template-areas: "image" "text" "state";
+   background: white;
+   box-shadow: 1px 1px 15px #888888;
+   height: 105vh;
+   width: 350px;
+   margin-left: 40px;
+   }
+   .card-image-1{
+      grid-area: image;
+      background-image:url("img/pexel.jpeg");
+      background-size: cover;
+      }
+      .card-image-2{
+      	grid-area: image;
+      	background-image: url("img/street.jpg");
+      	background-size: cover;
+      }
+      .card-image-3{
+      	grid-area: image;
+      	background-image: url("img/stret.jpg");
+      	background-size: cover;
+      }
+
+
+      .card-text{
+          grid-area: text;
+          margin: 25px;
+          }
+          .card-text .date{
+             color: #bbbbbb;
+             letter-spacing: 1px;
+          }
+          .card-text h2{
+              text-align: center;
+              color: #44444;
+              margin: 12px;
+              
+              }
+              .card-text p{
+                 letter-spacing: 2px;
+                 font-size: 16px;
+                 word-spacing: 4px;
+                 line-height: 1.8;
+                 color: #666666;
+                 
+                 }
+          .card-state{
+              grid-area: state;
+              margin: 16px;
+              }
+             .card-state ul{
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              }
+              .card-state li{
+                float: left;
+                padding: 18px;
+                }
+               .card-state a{
+                  text-decoration: none;
+                  display: inline-block;
+                  color: black;
+                  margin: 8px;
+                  }
+                 .card-state i{
+                       position: relative;
+                       top: 6px;
+                       right: 6px;
+                       }
+
+.hire{
+	 height: 90vh;
+	 width: auto;
+	 background: #e11584;
+	 color: white;
+	 display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+.middle h2{
+	  font-size: 34px;
+	   margin: 10px;
+	   padding: 8px;
+	   letter-spacing: 4px;
+	   word-spacing: 2px;
+}
+.middle p{
+	 margin: 10px;
+	 padding: 22px;
+	 letter-spacing: 4px;
+	 word-spacing: 2px;
+	 line-height: 25px;
+}
+.middle button{
+	outline: none;
+	width: 150px;
+	height: 65px;
+	border: 1px solid white;
+	border-radius: 35px;
+	color: black;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.middle button:hover{
+	  background: white;
+	  cursor: pointer;
+}
+
+footer{
+	margin: 20px;
+	height: 75vh;
+	width: auto;
+	margin: 40px;
+}
+.link{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	gap: 10px;
+	margin-top: 90px;
+
+}
+.link h4{
+	  display: inline-block;
+	  margin: 20px;
+      padding-bottom: 25px;
+}
+
+.link ul{
+	list-style-type: none;
+	margin: 20px;
+}
+.link a{
+	text-decoration: none;
+	padding: 8px;
+	display: inline-block;
+	color: black;
+}
+.link p{
+	  letter-spacing: 7px;
+	  word-spacing: 8px;
+	  margin: 20px;
+	  line-height: 30px;
+}
+.link a:hover{
+	 text-decoration: underline;
+}
+.copyright{
+	  text-align: center;
+	  margin-top: 70px;
+}
+.copyright p{
+	letter-spacing: 2px;
+	word-spacing: 1px;
+	  line-height: 30px;
+}
+
+.name{
+	  color: #e11584;
+	  font-weight: bolder;
+}

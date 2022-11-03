@@ -1,0 +1,94 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+section{
+    display: flex;
+    height: 110vh;
+    width: 100%;
+    position: relative;
+}
+
+section .imgbox{
+       height: 100%;
+       width: 50%;
+       position: relative;
+}
+section .imgbox img{
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+section .containbox{
+   display: flex;
+   width: 50%;
+   height: 100%;
+   align-items: center;
+   justify-content: center;
+}
+section .containbox .formbx{
+    width: 50%;
+}
+section .containbox .formbx h2{
+      color: #184a45ff;
+      font-weight: 600;
+      font-size: 1.6em;
+      letter-spacing: 1px;
+      border-bottom: 5px solid #184a44aa;
+      margin-bottom: 25px;
+      display: inline-block;
+      text-transform: uppercase;
+}
+section .containbox .formbx .inputbx{
+   margin-bottom: 22px;
+}
+section .containbox .formbx .inputbx span{
+     color:  #184a45ff;
+     letter-spacing: 1px;
+     font-weight: 300;
+     display: inline-block;
+     margin-bottom: 5px;
+     font-size: 16px;
+}
+section .containbox .formbx .inputbx input{
+    width: 100%;
+    outline: none;
+    padding:  10px 20px;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #00203fff;
+    color: #00203fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0,0.2);
+
+}
+
+section .containbox .formbx .inputbx input[type="submit"]{
+    background: #184a45ff;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+section .containbox .formbx .inputbx input[type="submit"]:hover{
+   background: #184a44aa;
+}
+section .containbox .formbx .inputbx p{
+    color: #184a44aa;
+}
+section .containbox .formbx .inputbx p a{
+    color: #184a45ff ;
+    font-weight: bolder;
+}
+.main{
+     width: 80%;
+     height: auto;
+}
